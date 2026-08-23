@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
+    <!-- Fuentes modernas para mejor legibilidad -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Header Fijo -->
     <header class="site-header">
         <div class="container header-container">
             <a href="/" class="logo">📦 Logisti<strong>Tech</strong></a>
@@ -15,48 +20,132 @@
         </div>
     </header>
 
-    <main class="container article-content">
-        <span class="badge">Tutorial Paso a Paso</span>
-        <h1>Cómo Instalar y Configurar la Xprinter XP-420B para Guías de Envío</h1>
-        <p class="meta-info">Publicado en LogistiTech • Tiempo de lectura: 5 min</p>
+    <!-- Contenido Principal del Artículo -->
+    <main class="container article-container">
+        
+        <!-- Cabecera del Artículo -->
+        <header class="article-header">
+            <span class="badge">Tutorial Paso a Paso con Imágenes</span>
+            <h1>Cómo Instalar y Configurar la Xprinter XP-420B para Guías de Envío</h1>
+            <p class="article-subtitle">Guía definitiva para emprendedores y e-commerce: solución de drivers, calibración de etiquetas de 10x15 cm y optimización de velocidad.</p>
+            <div class="meta-info">
+                <span>📅 Actualizado 2026</span>
+                <span>⏱️ Tiempo de lectura: 6 min</span>
+                <span>👤 Por Equipo LogistiTech</span>
+            </div>
+        </header>
 
-        <section class="content-body">
-            <p>La <strong>Xprinter XP-420B</strong> es una de las impresoras térmicas más populares para e-commerce y agencias de logística debido a su relación calidad-precio. Sin embargo, el error más común al instalarla por primera vez es que la etiqueta se imprime corrida o desalineada.</p>
+        <!-- Bloque Multimedia / Video Destacado -->
+        <div class="media-container">
+            <div class="video-wrapper">
+                <!-- Puedes cambiar el src por un video de YouTube real sobre la instalación de la impresora -->
+                <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Video tutorial Xprinter XP-420B" allowfullscreen></iframe>
+            </div>
+            <p class="media-caption">▶️ Video resumen: Proceso rápido de conexión física y primera impresión de prueba.</p>
+        </div>
 
-            <h2>Paso 1: Descargar los Drivers Correctos (BarTender / Seagull Scientific)</h2>
-            <p>Aunque la impresora incluye un CD en la caja, la forma más estable de instalarla en Windows es utilizando los drivers oficiales de <em>Seagull Scientific</em>.</p>
-            <ul>
-                <li>Conecta la impresora vía USB a tu computadora y enciéndela.</li>
-                <li>Ejecuta el instalador de drivers y selecciona el modelo <strong>Xprinter XP-420B</strong>.</li>
-                <li>Asegúrate de asignarla como impresora predeterminada si la usarás exclusivamente para etiquetas de despacho.</li>
-            </ul>
+        <!-- Cuerpo del Artículo con Estilos Mejorados -->
+        <div class="content-body">
+            <p class="lead">
+                La <strong>Xprinter XP-420B</strong> es una de las impresoras térmicas directas más eficientes para despachos de e-commerce. Sin embargo, configurar los controladores correctos y las medidas del papel adhesivo suele ser un dolor de cabeza si no se siguen los pasos adecuados. Aquí te mostramos cómo dejarla lista en menos de 10 minutos.
+            </p>
 
-            <h2>Paso 2: Configurar el Tamaño del Papel (Etiqueta Térmica 10x15 cm / 4x6")</h2>
-            <p>El estándar de las agencias de mensajería para guías de envío es de 100mm x 150mm. Sigue estos pasos para definir las medidas exactas:</p>
-            <ol>
-                <li>Ve a <strong>Configuración > Dispositivos > Impresoras y escáneres</strong> en Windows.</li>
-                <li>Haz clic en <em>Xprinter XP-420B</em> y selecciona <strong>Preferencias de impresión</strong>.</li>
-                <li>En la pestaña <em>Configuración de página</em>, haz clic en <strong>Nuevo...</strong></li>
-                <li>Establece el ancho en <strong>100.0 mm</strong> y la altura en <strong>150.0 mm</strong>. Nombre de la etiqueta: <code>Guia de Envio</code>.</li>
-            </ol>
-
-            <div class="callout">
-                <strong>💡 Consejo de Oro:</strong> Si la impresora deja una hoja en blanco entre cada guía, mantén presionado el botón superior (FEED) durante 3 segundos con la impresora encendida hasta escuchar dos pitidos. Esto ejecutará el <em>Auto-calibrado del sensor de etiquetas</em>.
+            <div class="toc-box">
+                <h3>📋 Tabla de Contenidos</h3>
+                <ul>
+                    <li><a href="#paso1">1. Descarga y configuración de Drivers</a></li>
+                    <li><a href="#paso2">2. Configuración del tamaño de etiqueta (10x15 cm)</a></li>
+                    <li><a href="#paso3">3. Calibración automática del sensor</a></li>
+                    <li><a href="#paso4">4. Ajuste de densidad y velocidad de impresión</a></li>
+                </ul>
             </div>
 
-            <h2>Paso 3: Ajustar la Densidad y Velocidad de Impresión</h2>
-            <p>Si las guías o los códigos de barras salen borrosos o poco legibles para los escáneres de las agencias, ajusta la densidad térmica:</p>
+            <!-- PASO 1 -->
+            <h2 id="paso1"><span>1</span> Descargar los Drivers Correctos (Seagull Scientific)</h2>
+            <p>Aunque la impresora incluye un mini CD, la gran mayoría de laptops modernas ya no tienen lector. La recomendación técnica es descargar siempre los controladores oficiales actualizados.</p>
+            
+            <div class="step-card">
+                <div class="step-icon">💻</div>
+                <div>
+                    <h4>Acción recomendada:</h4>
+                    <p>Entra al sitio oficial de soporte o utiliza los drivers universales de <strong>Seagull Scientific para Xprinter</strong>. Conecta la impresora mediante el cable USB a tu PC con Windows y enciéndela antes de ejecutar el instalador.</p>
+                </div>
+            </div>
+
+            <!-- Espacio visual / Foto ilustrativa -->
+            <figure class="article-image">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Conexión de impresora térmica a computadora">
+                <figcaption>Asegúrate de utilizar un puerto USB 2.0 o 3.0 directo en la placa base de tu ordenador para evitar cortes de comunicación.</figcaption>
+            </figure>
+
+            <!-- PASO 2 -->
+            <h2 id="paso2"><span>2</span> Configurar el Tamaño del Papel (Etiqueta Térmica 10x15 cm / 4x6")</h2>
+            <p>Las principales agencias de transporte exigen el formato estándar de guías autoadhesivas de 100mm x 150mm. Configúralo correctamente en tu sistema operativo:</p>
+            
+            <ol class="styled-list">
+                <li>Ve a <strong>Panel de Control > Dispositivos e Impresoras</strong> en Windows.</li>
+                <li>Haz clic derecho sobre el icono de la <em>Xprinter XP-420B</em> y selecciona <strong>Preferencias de impresión</strong>.</li>
+                <li>Dirígete a la pestaña de <em>Opciones de página</em> o <em>Configuración de página</em>.</li>
+                <li>Crea un nuevo formato de papel con ancho de <strong>100.0 mm</strong> y alto de <strong>150.0 mm</strong>. Guarda los cambios.</li>
+            </ol>
+
+            <!-- PASO 3 -->
+            <h2 id="paso3"><span>3</span> Calibración del Sensor de Etiquetas</h2>
+            <p>Si notas que al mandar a imprimir una guía la etiqueta se detiene a la mitad o deja espacios en blanco enormes, la impresora necesita calibrar el tamaño del rollo físico.</p>
+
+            <div class="callout warning">
+                <div class="callout-icon">⚠️</div>
+                <div>
+                    <strong>Truco de calibración manual (Sin software):</strong>
+                    <ol style="margin-top: 5px; margin-left: 15px;">
+                        <li>Apaga la impresora del interruptor trasero.</li>
+                        <li>Mantén presionado el botón superior <strong>FEED</strong> (el botón con luz LED).</li>
+                        <li>Enciende la impresora sin soltar el botón hasta que la luz parpadee en color rojo dos veces, luego suéltalo. La impresora avanzará unas cuantas etiquetas y se calibrará sola.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- PASO 4 -->
+            <h2 id="paso4"><span>4</span> Ajustar la Densidad y Velocidad de Impresión</h2>
+            <p>Un error clásico es que el código de barras salga pixelado o con líneas blancas verticales. Esto se soluciona modificando la quema térmica:</p>
             <ul>
-                <li>En <em>Preferencias de impresión</em>, ve a la pestaña <strong>Opciones</strong>.</li>
-                <li>Reduce la velocidad a <strong>4 in/sec (101.6 mm/s)</strong>.</li>
-                <li>Aumenta la Oscuridad / Densidad a un nivel de <strong>8 a 10</strong>.</li>
+                <li>En las preferencias de impresión, busca la pestaña <strong>Opciones / Gráficos</strong>.</li>
+                <li>Baja la velocidad de impresión a <strong>4 in/s</strong> para ganar mayor nitidez en las líneas del código de barras de la guía.</li>
+                <li>Sube la densidad (oscuridad) a un nivel entre <strong>8 y 10</strong> según el tipo de papel térmico que utilices.</li>
             </ul>
+
+            <div class="callout success">
+                <div class="callout-icon">💡</div>
+                <div>
+                    <strong>¿Dónde comprar insumos compatibles?</strong>
+                    <p>Utiliza siempre rollos de papel térmico autoadhesivo top-coat con protección contra humedad para evitar que las guías se borren con el calor o la lluvia durante el transporte.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sección de Enlaces Relacionados al final del artículo -->
+        <section class="related-posts">
+            <h3>Artículos Relacionados que te Pueden Interesar</h3>
+            <div class="related-grid">
+                <a href="/" class="related-card">
+                    <h4>⚖️ Cómo elegir la báscula digital ideal para pesar paquetes pequeños</h4>
+                    <span>Leer artículo →</span>
+                </a>
+                <a href="/" class="related-card">
+                    <h4>🔍 Solución de errores: Impresora térmica imprime borroso</h4>
+                    <span>Leer artículo →</span>
+                </a>
+            </div>
         </section>
+
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <p>© 2026 LogistiTech - Guías de hardware operativo y logística para pymes.</p>
+            <p class="disclaimer">Los enlaces de recomendación de hardware pueden incluir programas de afiliados sin costo adicional para ti.</p>
         </div>
     </footer>
 
@@ -64,37 +153,230 @@
 </html>
 
 <style>
+    /* Estilos generales mejorados */
     :root {
-        --primary: #1e293b;
+        --primary: #0f172a;
         --primary-accent: #2563eb;
+        --primary-hover: #1d4ed8;
         --bg-color: #f8fafc;
         --surface-color: #ffffff;
-        --text-color: #0f172a;
-        --text-muted: #475569;
+        --text-color: #334155;
+        --text-muted: #64748b;
         --border-color: #e2e8f0;
-        --radius: 10px;
-        --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        --radius: 12px;
+        --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: var(--font-sans); background-color: var(--bg-color); color: var(--text-color); line-height: 1.7; }
-    .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+    
+    body { 
+        font-family: var(--font-sans); 
+        background-color: var(--bg-color); 
+        color: var(--text-color); 
+        line-height: 1.75; 
+    }
 
-    .site-header { background: var(--surface-color); border-bottom: 1px solid var(--border-color); padding: 15px 0; margin-bottom: 40px; }
+    .container { max-width: 820px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header del sitio */
+    .site-header { 
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border-color); 
+        padding: 15px 0; 
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
     .header-container { display: flex; justify-content: space-between; align-items: center; }
-    .logo { text-decoration: none; color: var(--text-color); font-size: 1.2rem; font-weight: bold; }
-    .back-link { text-decoration: none; color: var(--primary-accent); font-weight: 600; font-size: 0.9rem; }
+    .logo { text-decoration: none; color: var(--primary); font-size: 1.2rem; font-weight: 700; }
+    .back-link { text-decoration: none; color: var(--primary-accent); font-weight: 600; font-size: 0.9rem; transition: color 0.2s; }
+    .back-link:hover { color: var(--primary-hover); }
 
-    .badge { display: inline-block; background-color: #dbeafe; color: var(--primary-accent); font-size: 0.8rem; font-weight: 600; padding: 3px 10px; border-radius: 15px; margin-bottom: 10px; }
-    h1 { font-size: 2rem; color: var(--primary); margin-bottom: 10px; line-height: 1.3; }
-    .meta-info { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; }
+    /* Cabecera del Artículo */
+    .article-container { padding: 40px 0 80px 0; }
+    .article-header { margin-bottom: 30px; text-align: left; }
+    .badge { 
+        display: inline-block; 
+        background-color: #dbeafe; 
+        color: var(--primary-accent); 
+        font-size: 0.8rem; 
+        font-weight: 700; 
+        padding: 4px 12px; 
+        border-radius: 20px; 
+        margin-bottom: 15px; 
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    h1 { 
+        font-size: 2.3rem; 
+        color: var(--primary); 
+        margin-bottom: 15px; 
+        line-height: 1.25; 
+        font-weight: 700;
+    }
+    .article-subtitle { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 20px; }
+    .meta-info { 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 15px; 
+        font-size: 0.85rem; 
+        color: var(--text-muted); 
+        border-bottom: 1px solid var(--border-color); 
+        padding-bottom: 20px; 
+    }
 
-    .content-body h2 { font-size: 1.35rem; color: var(--primary); margin: 30px 0 15px 0; }
-    .content-body p { margin-bottom: 15px; color: #334155; }
-    .content-body ul, .content-body ol { margin: 0 0 20px 25px; color: #334155; }
-    .content-body li { margin-bottom: 8px; }
+    /* Contenedor Multimedia / Video */
+    .media-container {
+        background: var(--surface-color);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius);
+        padding: 15px;
+        margin-bottom: 35px;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+    }
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+        height: 0;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%; border: 0;
+    }
+    .media-caption { font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 10px; }
 
-    .callout { background: #eff6ff; border-left: 4px solid var(--primary-accent); padding: 15px 20px; border-radius: 0 var(--radius) var(--radius) 0; margin: 25px 0; font-size: 0.95rem; }
+    /* Tabla de contenidos (TOC) */
+    .toc-box {
+        background: #f1f5f9;
+        border: 1px solid #cbd5e1;
+        border-radius: var(--radius);
+        padding: 20px 25px;
+        margin: 30px 0;
+    }
+    .toc-box h3 { font-size: 1rem; color: var(--primary); margin-bottom: 10px; }
+    .toc-box ul { list-style: none; margin: 0; }
+    .toc-box li { margin-bottom: 8px; font-size: 0.95rem; }
+    .toc-box a { color: var(--primary-accent); text-decoration: none; font-weight: 500; }
+    .toc-box a:hover { text-decoration: underline; }
 
-    .site-footer { background: var(--surface-color); border-top: 1px solid var(--border-color); padding: 30px 0; text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 60px; }
+    /* Cuerpo del artículo y tipografía */
+    .content-body .lead { font-size: 1.1rem; font-weight: 500; color: #1e293b; margin-bottom: 25px; }
+    .content-body h2 { 
+        font-size: 1.5rem; 
+        color: var(--primary); 
+        margin: 45px 0 20px 0; 
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .content-body h2 span {
+        background: var(--primary-accent);
+        color: white;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 0.9rem;
+    }
+    .content-body p { margin-bottom: 20px; }
+
+    /* Tarjetas de pasos destacados */
+    .step-card {
+        background: var(--surface-color);
+        border: 1px solid var(--border-color);
+        border-left: 4px solid var(--primary-accent);
+        border-radius: var(--radius);
+        padding: 20px;
+        margin: 25px 0;
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+    }
+    .step-icon { font-size: 1.5rem; background: #eff6ff; padding: 10px; border-radius: 8px; }
+    .step-card h4 { color: var(--primary); margin-bottom: 5px; font-size: 1rem; }
+    .step-card p { margin-bottom: 0; font-size: 0.95rem; }
+
+    /* Imágenes dentro del artículo */
+    .article-image {
+        margin: 30px 0;
+        text-align: center;
+    }
+    .article-image img {
+        width: 100%;
+        border-radius: var(--radius);
+        border: 1px solid var(--border-color);
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+    }
+    .article-image figcaption {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        margin-top: 8px;
+        font-style: italic;
+    }
+
+    /* Listas estilizadas */
+    .styled-list { margin: 20px 0 25px 20px; }
+    .styled-list li { margin-bottom: 12px; }
+
+    /* Callouts (Alertas y Tips) */
+    .callout { 
+        background: #eff6ff; 
+        border-left: 4px solid var(--primary-accent); 
+        padding: 20px; 
+        border-radius: 0 var(--radius) var(--radius) 0; 
+        margin: 30px 0; 
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    .callout.warning { background: #fef2f2; border-left-color: #dc2626; }
+    .callout.success { background: #ecfdf5; border-left-color: #059669; }
+    .callout-icon { font-size: 1.25rem; }
+
+    /* Relacionados */
+    .related-posts {
+        margin-top: 60px;
+        border-top: 1px solid var(--border-color);
+        padding-top: 30px;
+    }
+    .related-posts h3 { font-size: 1.2rem; color: var(--primary); margin-bottom: 20px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .related-card {
+        background: var(--surface-color);
+        border: 1px solid var(--border-color);
+        padding: 20px;
+        border-radius: var(--radius);
+        text-decoration: none;
+        color: var(--text-color);
+        transition: transform 0.2s, box-shadow 0.2s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .related-card:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
+    .related-card h4 { font-size: 0.95rem; color: var(--primary); line-height: 1.4; }
+    .related-card span { font-size: 0.85rem; color: var(--primary-accent); font-weight: 600; }
+
+    /* Footer */
+    .site-footer { 
+        background: var(--surface-color); 
+        border-top: 1px solid var(--border-color); 
+        padding: 40px 0; 
+        text-align: center; 
+        font-size: 0.85rem; 
+        color: var(--text-muted); 
+    }
+    .disclaimer { margin-top: 8px; font-size: 0.78rem; }
+
+    @media (max-width: 640px) {
+        h1 { font-size: 1.75rem; }
+        .step-card { flex-direction: column; gap: 10px; }
+    }
 </style>
