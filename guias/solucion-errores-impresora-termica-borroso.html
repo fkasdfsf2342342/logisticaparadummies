@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Fijo -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="/" class="logo">📦 Logisti<strong>Tech</strong></a>
+            <a href="/" class="back-link">← Volver al Inicio</a>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container article-container">
+        
+        <header class="article-header">
+            <span class="badge">Soporte Técnico y Solución de Problemas</span>
+            <h1>🔍 Solución: ¿Por qué mi Impresora Térmica Imprime Borroso o Muy Claro?</h1>
+            <p class="article-subtitle">Aprende a diagnosticar y corregir problemas de calidad de impresión en guías de envío y códigos de barras ilegibles.</p>
+            <div class="meta-info">
+                <span>📅 Actualizado 2026</span>
+                <span>⏱️ Tiempo de lectura: 4 min</span>
+                <span>👤 Por Equipo LogistiTech</span>
+            </div>
+        </header>
+
+        <div class="content-body">
+            <p class="lead">
+                Que un código de barras salga borroso o desvanecido puede causar que la empresa de logística rechace el paquete en el centro de acopio. A diferencia de las impresoras tradicionales, las impresoras térmicas no usan tinta, por lo que el problema se debe a <strong>temperatura, velocidad, suciedad o calidad del papel</strong>.
+            </p>
+
+            <h2>Causa 1: El cabezal térmico está sucio de adhesivo o polvo</h2>
+            <p>Con el paso del tiempo, el pegamento del borde de las etiquetas se acumula sobre el cabezal de impresión, creando una barrera aislante que impide que el calor llegue uniformemente al papel.</p>
+            
+            <div class="step-card">
+                <div class="step-icon">🧽</div>
+                <div>
+                    <h4>Cómo limpiarlo correctamente:</h4>
+                    <ol style="margin-left: 15px;">
+                        <li>Apaga y desconecta la impresora por completo.</li>
+                        <li>Abre la tapa y ubica la barra delgada negra/plateada (cabezal).</li>
+                        <li>Humedece un paño de microfibra o hisopo con <strong>alcohol isopropílico al 99%</strong>.</li>
+                        <li>Frota suavemente en una sola dirección hasta retirar residuos oscuros. Deja secar 2 minutos antes de encender.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Imagen limpieza cabezal -->
+            <figure class="article-image">
+                <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80" alt="Mantenimiento y limpieza de componentes electrónicos">
+                <figcaption>Limpiar el cabezal térmico con alcohol isopropílico extiende drásticamente la vida útil del equipo.</figcaption>
+            </figure>
+
+            <h2>Causa 2: Configuración de Densidad (Oscuridad) y Velocidad</h2>
+            <p>Si la impresora avanza demasiado rápido, los pines térmicos no tienen tiempo suficiente para quemar el papel químico adecuadamente.</p>
+
+            <ul class="styled-list">
+                <li>Abre el <strong>Panel de Control > Dispositivos e Impresoras</strong>.</li>
+                <li>Haz clic derecho en tu impresora > <strong>Preferencias de Impresión > Opciones</strong>.</li>
+                <li>Reduce la velocidad a <strong>3 in/s o 4 in/s</strong>.</li>
+                <li>Aumenta la Densidad / Darkness gradualmente (puedes probar entre los niveles <strong>8 y 12</strong>).</li>
+            </ul>
+
+            <div class="callout warning">
+                <div class="callout-icon">⚠️</div>
+                <div>
+                    <strong>Cuidado con el exceso de calor:</strong> No subas la densidad al nivel máximo (15 o más) sin necesidad. Un exceso de temperatura puede arrugar el papel térmico, quemar prematuramente el cabezal o hacer que las letras se expandan y deformen.
+                </div>
+            </div>
+
+            <h2>Causa 3: Calidad deficiente o degradación del Papel Térmico</h2>
+            <p>El papel térmico reaccciona a la temperatura y la humedad ambiental. Si los rollos han estado expuestos directamente a la luz solar o al calor excesivo durante el almacenamiento, el químico reactivo pierde efectividad.</p>
+
+            <div class="callout success">
+                <div class="callout-icon">💡</div>
+                <div>
+                    <strong>Prueba rápida del rasguño:</strong> Raspa rápidamente la superficie del papel térmico con la uña. Si deja una marca negra intensa inmediatamente, el papel está en buen estado. Si deja una marca grisácea pálida, el rollo está vencido o degradado.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Relacionados -->
+        <section class="related-posts">
+            <h3>Artículos Relacionados</h3>
+            <div class="related-grid">
+                <a href="/guias/como-instalar-xprinter-xp-420b" class="related-card">
+                    <h4>🖨️ Cómo Instalar y Configurar la Xprinter XP-420B para Guías de Envío</h4>
+                    <span>Leer artículo →</span>
+                </a>
+                <a href="/guias/como-elegir-bascula-digital-paquetes" class="related-card">
+                    <h4>⚖️ Cómo Elegir la Báscula Digital Ideal para Pesar Paquetes Pequeños</h4>
+                    <span>Leer artículo →</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 LogistiTech - Guías de hardware operativo y logística para pymes.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<style>
+    :root {
+        --primary: #0f172a;
+        --primary-accent: #2563eb;
+        --primary-hover: #1d4ed8;
+        --bg-color: #f8fafc;
+        --surface-color: #ffffff;
+        --text-color: #334155;
+        --text-muted: #64748b;
+        --border-color: #e2e8f0;
+        --radius: 12px;
+        --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-sans); background-color: var(--bg-color); color: var(--text-color); line-height: 1.75; }
+    .container { max-width: 820px; margin: 0 auto; padding: 0 20px; }
+
+    .site-header { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-color); padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+    .header-container { display: flex; justify-content: space-between; align-items: center; }
+    .logo { text-decoration: none; color: var(--primary); font-size: 1.2rem; font-weight: 700; }
+    .back-link { text-decoration: none; color: var(--primary-accent); font-weight: 600; font-size: 0.9rem; }
+
+    .article-container { padding: 40px 0 80px 0; }
+    .badge { display: inline-block; background-color: #fee2e2; color: #dc2626; font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-bottom: 15px; text-transform: uppercase; }
+    h1 { font-size: 2.2rem; color: var(--primary); margin-bottom: 15px; line-height: 1.25; font-weight: 700; }
+    .article-subtitle { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 20px; }
+    .meta-info { display: flex; flex-wrap: wrap; gap: 15px; font-size: 0.85rem; color: var(--text-muted); border-bottom: 1px solid var(--border-color); padding-bottom: 20px; }
+
+    .content-body .lead { font-size: 1.1rem; font-weight: 500; color: #1e293b; margin-bottom: 25px; }
+    .content-body h2 { font-size: 1.4rem; color: var(--primary); margin: 35px 0 15px 0; }
+    
+    .step-card { background: var(--surface-color); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-accent); border-radius: var(--radius); padding: 20px; margin: 25px 0; display: flex; gap: 15px; align-items: flex-start; }
+    .step-icon { font-size: 1.5rem; background: #eff6ff; padding: 10px; border-radius: 8px; }
+
+    .article-image { margin: 30px 0; text-align: center; }
+    .article-image img { width: 100%; border-radius: var(--radius); border: 1px solid var(--border-color); }
+    .article-image figcaption { font-size: 0.82rem; color: var(--text-muted); margin-top: 8px; font-style: italic; }
+
+    .styled-list { margin: 20px 0 25px 20px; }
+    .styled-list li { margin-bottom: 10px; }
+
+    .callout { background: #eff6ff; border-left: 4px solid var(--primary-accent); padding: 20px; border-radius: 0 var(--radius) var(--radius) 0; margin: 30px 0; display: flex; gap: 15px; align-items: flex-start; }
+    .callout.warning { background: #fef2f2; border-left-color: #dc2626; }
+    .callout.success { background: #ecfdf5; border-left-color: #059669; }
+
+    .related-posts { margin-top: 60px; border-top: 1px solid var(--border-color); padding-top: 30px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .related-card { background: var(--surface-color); border: 1px solid var(--border-color); padding: 20px; border-radius: var(--radius); text-decoration: none; color: var(--text-color); transition: transform 0.2s; display: flex; flex-direction: column; justify-content: space-between; gap: 15px; }
+    .related-card:hover { transform: translateY(-3px); }
+    .related-card h4 { font-size: 0.95rem; color: var(--primary); }
+    .related-card span { font-size: 0.85rem; color: var(--primary-accent); font-weight: 600; }
+
+    .site-footer { background: var(--surface-color); border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; font-size: 0.85rem; color: var(--text-muted); }
+</style>
