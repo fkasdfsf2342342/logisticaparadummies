@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="/" class="logo">📦 Logisti<strong>Tech</strong></a>
+            <a href="/" class="back-link">← Volver al Inicio</a>
+        </div>
+    </header>
+
+    <main class="container article-content">
+        <span class="badge">Tutorial Paso a Paso</span>
+        <h1>Cómo Instalar y Configurar la Xprinter XP-420B para Guías de Envío</h1>
+        <p class="meta-info">Publicado en LogistiTech • Tiempo de lectura: 5 min</p>
+
+        <section class="content-body">
+            <p>La <strong>Xprinter XP-420B</strong> es una de las impresoras térmicas más populares para e-commerce y agencias de logística debido a su relación calidad-precio. Sin embargo, el error más común al instalarla por primera vez es que la etiqueta se imprime corrida o desalineada.</p>
+
+            <h2>Paso 1: Descargar los Drivers Correctos (BarTender / Seagull Scientific)</h2>
+            <p>Aunque la impresora incluye un CD en la caja, la forma más estable de instalarla en Windows es utilizando los drivers oficiales de <em>Seagull Scientific</em>.</p>
+            <ul>
+                <li>Conecta la impresora vía USB a tu computadora y enciéndela.</li>
+                <li>Ejecuta el instalador de drivers y selecciona el modelo <strong>Xprinter XP-420B</strong>.</li>
+                <li>Asegúrate de asignarla como impresora predeterminada si la usarás exclusivamente para etiquetas de despacho.</li>
+            </ul>
+
+            <h2>Paso 2: Configurar el Tamaño del Papel (Etiqueta Térmica 10x15 cm / 4x6")</h2>
+            <p>El estándar de las agencias de mensajería para guías de envío es de 100mm x 150mm. Sigue estos pasos para definir las medidas exactas:</p>
+            <ol>
+                <li>Ve a <strong>Configuración > Dispositivos > Impresoras y escáneres</strong> en Windows.</li>
+                <li>Haz clic en <em>Xprinter XP-420B</em> y selecciona <strong>Preferencias de impresión</strong>.</li>
+                <li>En la pestaña <em>Configuración de página</em>, haz clic en <strong>Nuevo...</strong></li>
+                <li>Establece el ancho en <strong>100.0 mm</strong> y la altura en <strong>150.0 mm</strong>. Nombre de la etiqueta: <code>Guia de Envio</code>.</li>
+            </ol>
+
+            <div class="callout">
+                <strong>💡 Consejo de Oro:</strong> Si la impresora deja una hoja en blanco entre cada guía, mantén presionado el botón superior (FEED) durante 3 segundos con la impresora encendida hasta escuchar dos pitidos. Esto ejecutará el <em>Auto-calibrado del sensor de etiquetas</em>.
+            </div>
+
+            <h2>Paso 3: Ajustar la Densidad y Velocidad de Impresión</h2>
+            <p>Si las guías o los códigos de barras salen borrosos o poco legibles para los escáneres de las agencias, ajusta la densidad térmica:</p>
+            <ul>
+                <li>En <em>Preferencias de impresión</em>, ve a la pestaña <strong>Opciones</strong>.</li>
+                <li>Reduce la velocidad a <strong>4 in/sec (101.6 mm/s)</strong>.</li>
+                <li>Aumenta la Oscuridad / Densidad a un nivel de <strong>8 a 10</strong>.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 LogistiTech - Guías de hardware operativo y logística para pymes.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<style>
+    :root {
+        --primary: #1e293b;
+        --primary-accent: #2563eb;
+        --bg-color: #f8fafc;
+        --surface-color: #ffffff;
+        --text-color: #0f172a;
+        --text-muted: #475569;
+        --border-color: #e2e8f0;
+        --radius: 10px;
+        --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-sans); background-color: var(--bg-color); color: var(--text-color); line-height: 1.7; }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+
+    .site-header { background: var(--surface-color); border-bottom: 1px solid var(--border-color); padding: 15px 0; margin-bottom: 40px; }
+    .header-container { display: flex; justify-content: space-between; align-items: center; }
+    .logo { text-decoration: none; color: var(--text-color); font-size: 1.2rem; font-weight: bold; }
+    .back-link { text-decoration: none; color: var(--primary-accent); font-weight: 600; font-size: 0.9rem; }
+
+    .badge { display: inline-block; background-color: #dbeafe; color: var(--primary-accent); font-size: 0.8rem; font-weight: 600; padding: 3px 10px; border-radius: 15px; margin-bottom: 10px; }
+    h1 { font-size: 2rem; color: var(--primary); margin-bottom: 10px; line-height: 1.3; }
+    .meta-info { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; }
+
+    .content-body h2 { font-size: 1.35rem; color: var(--primary); margin: 30px 0 15px 0; }
+    .content-body p { margin-bottom: 15px; color: #334155; }
+    .content-body ul, .content-body ol { margin: 0 0 20px 25px; color: #334155; }
+    .content-body li { margin-bottom: 8px; }
+
+    .callout { background: #eff6ff; border-left: 4px solid var(--primary-accent); padding: 15px 20px; border-radius: 0 var(--radius) var(--radius) 0; margin: 25px 0; font-size: 0.95rem; }
+
+    .site-footer { background: var(--surface-color); border-top: 1px solid var(--border-color); padding: 30px 0; text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 60px; }
+</style>
