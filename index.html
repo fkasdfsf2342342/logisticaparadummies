@@ -6,27 +6,10 @@
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
     <link rel="canonical" href={canonicalURL} />
-    
-    <!-- Open Graph (WhatsApp / Facebook) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonicalURL} />
-    <meta property="og:title" content={pageTitle} />
-    <meta property="og:description" content={pageDescription} />
-
-    <!-- Datos Estructurados JSON-LD (Schema.org) para Google -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "LogistiTech",
-        "url": "https://tu-dominio.com/",
-        "description": "Guías técnicas y herramientas de empaque para pymes y e-commerce."
-      }
-    </script>
 </head>
 <body>
 
-    <!-- Header / Navegación -->
+    <!-- Header / Navegación Corregida -->
     <header class="site-header">
         <div class="container header-container">
             <a href="/" class="logo">
@@ -43,7 +26,7 @@
         </div>
     </header>
 
-    <!-- Hero Section con H1 enfocado en SEO -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <span class="badge">Especialistas en Hardware Logístico</span>
@@ -53,15 +36,16 @@
     </section>
 
     <main class="container main-content">
-        <!-- Sección de Artículos Clave -->
+        
+        <!-- Sección 1: Guías Técnicas -->
         <section id="guias" class="section">
             <div class="section-header">
-                <h2>Guías Técnicas Destacadas</h2>
+                <h2>Guías Técnicas y Drivers</h2>
                 <p>Tutoriales probados para configurar tu hardware de despacho sin complicaciones.</p>
             </div>
 
             <div class="card-grid">
-                <!-- Tarjeta 1: Tutorial Xprinter -->
+                <!-- Tarjeta 1: Enlace activo a la guía creada -->
                 <article class="card">
                     <span class="card-tag">Configuración</span>
                     <h3><a href="/guias/como-instalar-xprinter-xp-420b">Cómo Instalar y Configurar la Xprinter XP-420B para Guías de Envío</a></h3>
@@ -71,32 +55,50 @@
                         <a href="/guias/como-instalar-xprinter-xp-420b" class="read-more">Leer guía →</a>
                     </div>
                 </article>
+            </div>
+        </section>
 
-                <!-- Tarjeta 2: Solución de Problema -->
-                <article class="card" id="soluciones">
+        <!-- Sección 2: Solución de Errores -->
+        <section id="soluciones" class="section">
+            <div class="section-header">
+                <h2>Solución de Errores Comunes</h2>
+                <p>Soluciona fallas mecánicas, atascos y problemas de calidad de impresión.</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="card">
                     <span class="card-tag alert">Solución de Errores</span>
-                    <h3><a href="/guias/impresora-termica-imprime-borroso">¿Por qué tu Impresora Térmica Imprime Borroso o Desalineado?</a></h3>
+                    <h3><a href="/guias/como-instalar-xprinter-xp-420b#paso3">¿Por qué tu Impresora Térmica Imprime Borroso o Desalineado?</a></h3>
                     <p>Descubre las 4 causas principales: limpieza del cabezal térmico, ajuste de la densidad de temperatura y calibración del sensor de etiquetas.</p>
                     <div class="card-footer">
                         <span class="read-time">⏱️ 4 min de lectura</span>
-                        <a href="/guias/impresora-termica-imprime-borroso" class="read-more">Ver soluciones →</a>
-                    </div>
-                </article>
-
-                <!-- Tarjeta 3: Comparativa -->
-                <article class="card" id="comparativas">
-                    <span class="card-tag feature">Comparativa 2026</span>
-                    <h3><a href="/comparativas/mejores-impresoras-termicas-etiquetas">Las 5 Mejores Impresoras Térmicas para Pequeños Negocios</a></h3>
-                    <p>Analizamos velocidad, conectividad USB/Bluetooth y costo por rollo de la Xprinter XP-470B vs Zebra ZD220 vs Munster.</p>
-                    <div class="card-footer">
-                        <span class="read-time">⏱️ 8 min de lectura</span>
-                        <a href="/comparativas/mejores-impresoras-termicas-etiquetas" class="read-more">Ver comparativa →</a>
+                        <a href="/guias/como-instalar-xprinter-xp-420b#paso3" class="read-more">Ver soluciones →</a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <!-- Sección Informativa SEO (Cúmulo Temático / Topical Authority) -->
+        <!-- Sección 3: Comparativas -->
+        <section id="comparativas" class="section">
+            <div class="section-header">
+                <h2>Comparativas de Hardware 2026</h2>
+                <p>Analizamos equipos de empaque e insumos para optimizar tus compras.</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="card">
+                    <span class="card-tag feature">Comparativa</span>
+                    <h3><a href="/guias/como-instalar-xprinter-xp-420b">Las 5 Mejores Impresoras Térmicas para Pequeños Negocios</a></h3>
+                    <p>Analizamos velocidad, conectividad USB/Bluetooth y costo por rollo de la Xprinter XP-470B vs Zebra ZD220 vs Munster.</p>
+                    <div class="card-footer">
+                        <span class="read-time">⏱️ 8 min de lectura</span>
+                        <a href="/guias/como-instalar-xprinter-xp-420b" class="read-more">Ver comparativa →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Informativa SEO ( Topical Authority ) -->
         <section class="info-block">
             <h2>Todo para Equipar la Zona de Empaque de tu Negocio</h2>
             <p>Elegir las herramientas operativas correctas evita retrasos en los despachos y reduce las devoluciones. Consulta nuestros recursos según tu necesidad:</p>
@@ -117,7 +119,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-container">
             <p>© 2026 LogistiTech - Guías de hardware operativo y logística para pymes.</p>
@@ -129,6 +130,11 @@
 </html>
 
 <style>
+    /* Permite el desplazamiento suave al tocar los enlaces del header */
+    html {
+        scroll-behavior: smooth;
+    }
+
     :root {
         --primary: #1e293b;
         --primary-accent: #2563eb;
@@ -159,9 +165,9 @@
     .hero h1 { font-size: 2.2rem; color: var(--primary); max-width: 800px; margin: 0 auto 15px auto; line-height: 1.25; }
     .hero-subtitle { font-size: 1.1rem; color: var(--text-muted); max-width: 680px; margin: 0 auto; }
 
-    /* Cards */
-    .section { padding: 50px 0; }
-    .section-header { margin-bottom: 30px; }
+    /* Cards & Sections */
+    .section { padding: 40px 0; border-bottom: 1px solid var(--border-color); }
+    .section-header { margin-bottom: 25px; }
     .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
     .card { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: var(--radius); padding: 25px; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; }
     .card:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
@@ -175,8 +181,8 @@
     .read-more { color: var(--primary-accent); font-weight: 600; text-decoration: none; }
 
     /* Info Block */
-    .info-block { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: var(--radius); padding: 35px; margin: 20px 0 60px 0; }
-    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .info-block { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: var(--radius); padding: 35px; margin: 40px 0 60px 0; }
+    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 20px; }
     .info-box { background: var(--bg-color); padding: 20px; border-radius: var(--radius); }
 
     /* Footer */
